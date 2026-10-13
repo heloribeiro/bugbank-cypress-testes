@@ -86,7 +86,7 @@ describe("CE-001 Cadastro", () => {
     cy.contains("p", "Nome não pode ser vazio.").should("be.visible");
   });
 
-  // BUG-001: o esperado (planilha) é o aviso "É campo obrigatório" abaixo do Nome.
+  // BUG-002: o esperado (planilha) é o aviso "É campo obrigatório" abaixo do Nome.
   // Este teste valida o comportamento atual (tela de erro) e precisa de ajuste quando o bug for corrigido.
   it("CT-006 Cadastro com o campo NOME preenchido apenas com espaço", () => {
     cy.register();
